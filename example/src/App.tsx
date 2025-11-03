@@ -1,12 +1,14 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-new-maps-directions';
-
-const result = multiply(3, 7);
+import { View, StyleSheet } from 'react-native';
+import { MapViewDirections } from 'react-native-new-maps-directions';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <MapViewDirections
+        origin={{ latitude: 0, longitude: 0 }}
+        destination={{ latitude: 0, longitude: 0 }}
+        apikey="YOUR_API_KEY"
+      />
     </View>
   );
 }
