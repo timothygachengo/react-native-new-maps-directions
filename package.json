@@ -1,6 +1,6 @@
 {
   "name": "react-native-new-maps-directions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript React Native component for rendering Google Maps directions and routes as polylines. Supports driving, walking, cycling, transit, and two-wheeler travel modes with full TypeScript support and automatic route fetching.",
   "contributors": [],
   "main": "./lib/module/index.js",
