@@ -5,6 +5,8 @@ import prettier from 'eslint-plugin-prettier';
 import { defineConfig } from 'eslint/config';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import jestPlugin from 'eslint-plugin-jest';
+import globals from 'globals';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,6 +26,17 @@ export default defineConfig([
     },
   },
   {
-    ignores: ['node_modules/', 'lib/', 'coverage/'],
+    ignores: ['node_modules/', 'lib/', 'coverage/', 'jest.config.js', 'jest.setup.js'],
   },
+  {
+    files: [
+      "**/*.test.ts",
+      "**/*.test.tsx"
+    ],
+    languageOptions: {
+      globals: {
+        ...globals.jest
+      }
+    }
+  }
 ]);
