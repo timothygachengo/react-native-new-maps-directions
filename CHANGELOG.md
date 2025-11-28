@@ -1,5 +1,11 @@
 # react-native-new-maps-directions
 
+## 1.0.1
+
+### Patch Changes
+
+- Internal fixes ([`594f0df`](https://github.com/timothygachengo/react-native-new-maps-directions/commit/594f0dff7f77e22c0aa80499a2c9b3cf0dc70bf4))
+
 ## 1.0.0
 
 ### Major Changes
