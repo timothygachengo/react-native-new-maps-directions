@@ -11904,7 +11904,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-maps@npm:^1.26.18, react-native-maps@npm:~1.26.18":
+"react-native-maps@npm:*, react-native-maps@npm:^1.26.18":
   version: 1.26.18
   resolution: "react-native-maps@npm:1.26.18"
   dependencies:
@@ -11941,7 +11941,7 @@ __metadata:
     react-dom: 19.1.0
     react-native: 0.81.5
     react-native-builder-bob: ^0.40.13
-    react-native-maps: ~1.26.18
+    react-native-maps: "*"
     react-native-monorepo-config: ^0.1.9
     react-native-web: ~0.21.0
   languageName: unknown
