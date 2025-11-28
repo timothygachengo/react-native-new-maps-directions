@@ -80,8 +80,8 @@ jobs:
         uses: changesets/action@v1
         id: release
         with:
-          version: pnpm run version
-          publish: pnpm exec changeset publish --git-tag
+          version: yarn version
+          publish: yarn changeset publish --git-tag
           commit: "chore(release): update version"
           title: "chore(release): update version"
         env:

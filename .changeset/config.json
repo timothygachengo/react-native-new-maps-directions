@@ -1,11 +1,13 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.1.2/schema.json",
-  "changelog": "@changesets/cli/changelog",
+  "changelog": ["@svitejs/changesets-changelog-github-compact", { "repo": "org/repo" }],
   "commit": false,
   "fixed": [],
   "linked": [],
   "access": "restricted",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": []
+  "ignore": [
+    "react-native-new-maps-directions-example"
+  ]
 }

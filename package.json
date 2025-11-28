@@ -1,7 +1,8 @@
 {
   "name": "react-native-new-maps-directions",
   "version": "0.1.1",
-  "description": "Maps directions for react native",
+  "description": "TypeScript React Native component for rendering Google Maps directions and routes as polylines. Supports driving, walking, cycling, transit, and two-wheeler travel modes with full TypeScript support and automatic route fetching.",
+  "contributors": [],
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
   "exports": {
@@ -39,7 +40,8 @@
     "lint:fix": "eslint \"**/*.{js,ts,tsx}\" --fix",
     "clean": "del-cli lib",
     "prepare": "bob build",
-    "release": "release-it --only-version"
+    "version": "changeset version",
+    "publish": "changeset publish --git-tag"
   },
   "keywords": [
     "react-native",
@@ -73,6 +75,7 @@
     "@react-native/babel-preset": "0.81.1",
     "@react-native/eslint-config": "^0.81.1",
     "@release-it/conventional-changelog": "^10.0.1",
+    "@svitejs/changesets-changelog-github-compact": "^1.2.0",
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-native": "^13.3.3",
     "@types/jest": "^29.5.14",
@@ -90,7 +93,6 @@
     "react-native-builder-bob": "^0.40.13",
     "react-native-maps": "^1.26.18",
     "react-test-renderer": "19.1.0",
-    "release-it": "^19.0.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   },
