@@ -97,7 +97,6 @@ export const MapViewDirections: React.FC<MapViewDirectionsProps> = (props) => {
         if (!response) return;
         const { distanceMeters, polyline } = response;
         if (polyline.encodedPolyline) {
-          console.log('Polyline:', polyline.encodedPolyline);
           // convert polyline to coordinates
           const decodedPolyline = directionService.decodePolyline(
             polyline.encodedPolyline
@@ -118,7 +117,6 @@ export const MapViewDirections: React.FC<MapViewDirectionsProps> = (props) => {
         if (onStart) {
           onStart(response);
         }
-        console.log('Coordinates:', coordinates);
       })
       .catch((err) => {
         if (onError) {
