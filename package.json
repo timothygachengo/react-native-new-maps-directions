@@ -63,7 +63,8 @@
   },
   "homepage": "https://github.com/timothygachengo/react-native-new-maps-directions#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.8",
