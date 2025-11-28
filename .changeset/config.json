@@ -1,6 +1,11 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.1.2/schema.json",
-  "changelog": ["@svitejs/changesets-changelog-github-compact", { "repo": "org/repo" }],
+  "changelog": [
+    "@svitejs/changesets-changelog-github-compact",
+    {
+      "repo": "timothygachengo/react-native-new-maps-directions"
+    }
+  ],
   "commit": false,
   "fixed": [],
   "linked": [],
